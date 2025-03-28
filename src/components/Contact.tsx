@@ -90,6 +90,15 @@ const Contact = () => {
                         </svg>
                       </a>
                       <a 
+                        href="https://instagram.com/sai_yaswanth_883" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-gray-600 hover:text-[#333] transition-colors"
+                        aria-label="Instagram Profile"
+>
+                        <Instagram size={20} />
+                      </a>
+                      <a 
                         href="https://github.com/saiyaswanth883/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
