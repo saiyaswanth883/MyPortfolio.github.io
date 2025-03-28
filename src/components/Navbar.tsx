@@ -29,7 +29,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-gray-200 py-4 shadow-sm"
+          ? "glass-card py-4 shadow-sm"
           : "bg-transparent py-6"
       )}
     >
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <a 
             href="#" 
-            className="text-xl font-display font-bold tracking-tight"
+            className="text-xl font-display font-bold tracking-tight gradient-text"
           >
             Venkata Sai Yaswanth Mariyala
           </a>
@@ -48,9 +48,10 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium transition-colors hover:text-primary"
+                className="text-sm font-medium transition-colors hover:text-primary relative group"
               >
                 {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
               </a>
             ))}
           </nav>
@@ -72,7 +73,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium py-2 transition-colors hover:text-primary"
+                  className="text-sm font-medium py-2 px-3 rounded-md transition-colors hover:bg-primary/10 hover:text-primary"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}

@@ -80,6 +80,8 @@ html {
 
   body {
     @apply bg-background text-foreground font-sans;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-attachment: fixed;
   }
 
   .section-container {
@@ -100,6 +102,36 @@ html {
 
   .card-glass {
     @apply bg-white/70 backdrop-blur-md border border-white/20 rounded-xl shadow-sm;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg-soft {
+    background: linear-gradient(90deg, hsla(46, 73%, 75%, 1) 0%, hsla(176, 73%, 88%, 1) 100%);
+  }
+  
+  .gradient-bg-vibrant {
+    background: linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%);
+  }
+  
+  .gradient-border {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+    z-index: -1;
+    border-radius: 0.7rem;
   }
 }
 
@@ -130,4 +162,58 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
+}
+
+/* Cool animated background shapes */
+.shape-blob {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  filter: blur(40px);
+  z-index: -1;
+  animation: float 7s ease-in-out infinite;
+}
+
+.shape-blob-1 {
+  top: 10vh;
+  left: 10vw;
+  width: 30vw;
+  height: 30vw;
+  animation-delay: 0s;
+}
+
+.shape-blob-2 {
+  bottom: 20vh;
+  right: 5vw;
+  width: 25vw;
+  height: 25vw;
+  background: linear-gradient(45deg, rgba(236, 72, 153, 0.1), rgba(248, 113, 113, 0.1));
+  animation-delay: -2s;
+}
+
+.shape-blob-3 {
+  top: 50vh;
+  left: 50vw;
+  width: 20vw;
+  height: 20vw;
+  background: linear-gradient(45deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+/* Card styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
