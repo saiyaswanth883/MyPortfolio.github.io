@@ -15,7 +15,8 @@ const Hero = () => {
               Data Science Enthusiast
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-4">
-              Venkata Sai<br />Yaswanth Mariyala
+              <span className="gradient-text bg-gradient-to-r from-blue-600 to-violet-500">Venkata Sai</span><br />
+              <span className="gradient-text bg-gradient-to-r from-violet-500 to-pink-500">Yaswanth Mariyala</span>
             </h1>
             <p className="text-xl text-muted-foreground font-light max-w-lg mb-8">
               Data analyst and visualization specialist with a passion for transforming complex datasets into meaningful insights.
