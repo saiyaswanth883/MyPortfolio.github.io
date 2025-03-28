@@ -39,7 +39,7 @@ const Navbar = () => {
             href="#" 
             className="text-xl font-display font-bold tracking-tight"
           >
-            Venkata Sai Yaswanth Mariyala - Fresher
+            Venkata Sai Yaswanth Mariyala
           </a>
 
           {/* Desktop Navigation */}
