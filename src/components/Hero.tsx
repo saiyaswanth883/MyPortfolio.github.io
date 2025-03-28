@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="relative gradient-border p-1 rounded-full">
             <div className="relative p-1 rounded-full bg-white/50 backdrop-blur-sm">
               <img
-                src="https://drive.google.com/file/d/19_PVLxgwpDwEaQT95OqpTFO0e3hVRx23/view?usp=sharing"
+                src="https://media.licdn.com/dms/image//D5603AQF8zsUKQXsfTQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721322428934?e=1748476800&v=beta&t=HlPNkt7UZrqnqSe7hZOQki1PeRWdsQp29pHSPxToCTo"
                 alt="Venkata Sai Yaswanth Mariyala"
                 className="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-xl"
               />
