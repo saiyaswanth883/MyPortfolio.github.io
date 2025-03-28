@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
-import { Linkedin, Github } from "lucide-react";
+import { Instagram, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
