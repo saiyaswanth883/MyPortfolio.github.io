@@ -95,7 +95,7 @@ const Contact = () => {
                         </svg>
                       </a>
                       <a 
-                        href="https://www.linkedin.com/in/venkata-sai-yaswanth-mariyala-8b8013215/" 
+                        href="https://www.linkedin.com/in/venkata-sai-yaswanth-mariyala-542476259/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="text-gray-600 hover:text-[#0A66C2] transition-colors"
